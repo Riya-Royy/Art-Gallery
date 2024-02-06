@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, rgba(181, 141, 198, 0.5)50%, rgba(192, 178, 197, 0.5)50%);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 50%;
+            margin: auto;
+            overflow: hidden;
+            padding-top: 20px;
+            
+        }
+
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+           
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px 0;
+            color: rgb(116, 52, 116);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            width: auto;
+            background:rgb(116, 52, 116);
+            color: #fff;
+            border: none;
+            padding: 10px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: Impact;
+            letter-spacing: 1px;
+        }
+
+        input[type="submit"]:hover {
+            background:rgb(128, 80, 128);
+        }
+
+        h1{
+            color: rgb(116, 52, 116); 
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-align: center;
+            margin: auto;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>More Query</h1>
+
+<div class="container">
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+</body>
+</html>

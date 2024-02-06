@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ArtBeat</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(
+          to right,
+          rgba(181, 141, 198, 0.5) 50%,
+          rgba(192, 178, 197, 0.5) 50%
+        );
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+        padding-top: 5px;
+      }
+
+      h2 {
+        font-size: 30px;
+        text-align: center;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        color: rgb(116, 52, 116);
+        letter-spacing: 1px;
+        opacity: 0;
+        transform: translateY(50px);
+        animation: fadeInUp 1s forwards;
+      }
+
+      .image-row {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+
+      .image-row img {
+        width: 30%;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        transform: translateY(50px);
+        animation: fadeInUp 1s forwards;
+      }
+
+      @keyframes fadeInUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      h2 {
+        font-size: 25px;
+        text-align: center;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        color: rgb(116, 52, 116);
+        letter-spacing: 1px;
+      }
+
+      p {
+        color: rgb(85, 56, 85);
+      }
+      li {
+        color: rgb(85, 56, 85);
+      }
+
+      .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+        padding-top: 5px;
+      }
+
+      .image-row {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+
+      .image-row img {
+        width: 30%;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+
+    <div id="app">
+      <!-- Header -->
+      <header>
+        <h1>💜 ArtBeat 💜</h1>
+        <nav>
+          <a href="#home" onclick="changePage('home.html')">Home</a>
+          <a href="#about" onclick="changePage('about.html')">About Us</a>
+          <a href="#login" onclick="changePage('login.html')">SignIn</a>
+          <a href="#create" onclick="changePage('create.html')">SignUp</a>
+          <a href="#contact" onclick="changePage('contact.html')">Contact Us</a>
+        </nav>
+      </header>
+
+      <!-- Main Content -->
+      <main id="main-content">
+        <div class="container">
+          <h2>Featured Artworks</h2>
+          <div class="image-row">
+            <img src="./images/image2.jpg" alt="Artwork 1" />
+            <img src="./images/image4.jpg" alt="Artwork 2" />
+            <img src="./images/image3.jpg" alt="Artwork 3" />
+          </div>
+        </div>
+      </main>
+
+      <div id="home">
+        <h2>Welcome to ArtBeat: Your Gateway to a World of Creativity</h2>
+        <p>
+          At ArtBeat, we invite you to embark on a journey into the captivating
+          realm of art. Immerse yourself in a vibrant community where creativity
+          knows no boundaries and artistic expression takes center stage.
+        </p>
+
+        <div class="container">
+          <div class="image-row">
+            <img src="./images/image5.jpg" alt="Artwork 1" />
+            <img src="./images/image8.jpg" alt="Artwork 2" />
+            <img src="./images/image6.jpg" alt="Artwork 3" />
+          </div>
+        </div>
+        <h2>Explore and Discover</h2>
+        <ul>
+          <li>
+            Art Galleries: Immerse yourself in stunning art galleries curated by
+            a diverse community of artists. From contemporary masterpieces to
+            avant-garde creations, there's something for every art lover.
+          </li>
+          <li>
+            Featured Artists: Discover the stories behind the artists who shape
+            our creative landscape. Learn about their inspirations, techniques,
+            and the stories woven into their masterful works.
+          </li>
+        </ul>
+
+        <div class="container">
+          <div class="image-row">
+            <img src="./images/image9.jpg" alt="Artwork 1" />
+            <img src="./images/image7.jpg" alt="Artwork 2" />
+            <img src="./images/image10.jpg" alt="Artwork 3" />
+          </div>
+        </div>
+
+        <h2>Your Creative Playground</h2>
+        <ul>
+          <li>
+            Showcase Your Art: Whether you're an emerging artist or an
+            established creator, ArtBeat provides a platform to showcase your
+            talent. Share your creations with the world and connect with a
+            global audience.
+          </li>
+          <li>
+            Art Workshops: Dive into a world of continuous learning. Explore our
+            art workshops, led by seasoned artists, and refine your skills while
+            embracing new techniques and styles.
+          </li>
+        </ul>
+
+        <h2>Join a Thriving Community</h2>
+        <ul>
+          <li>
+            Connect with Like-Minded Souls: ArtBeat is more than a platform;
+            it's a community. Connect with fellow artists, art enthusiasts, and
+            collectors. Share ideas, collaborate on projects, and build lasting
+            connections.
+          </li>
+          <li>
+            Stay Inspired: Follow your favorite artists, discover new trends,
+            and stay inspired. Our community is a wellspring of creativity
+            that's always evolving.
+          </li>
+        </ul>
+
+        <div class="container">
+          <div class="image-row">
+            <img src="./images/image11.jpg" alt="Artwork 1" />
+            <img src="./images/image12.jpg" alt="Artwork 2" />
+            <img src="./images/image13.jpg" alt="Artwork 3" />
+          </div>
+        </div>
+
+        <h2>ArtBeat Values</h2>
+        <p>
+          At the heart of ArtBeat are core values that guide our journey:
+          Creativity: Celebrating the diverse expressions of human creativity.
+          Innovation: Embracing new ideas and pushing the boundaries of artistic
+          expression. Community: Fostering a supportive and inclusive community
+          that thrives on shared passions.
+        </p>
+
+        <h2>Start Your Artistic Adventure Today</h2>
+        <p>
+          ArtBeat is more than a website; it's a canvas waiting for your story
+          to unfold. Join us in celebrating the beauty of art, the power of
+          creativity, and the connections forged through shared passions.
+        </p>
+      </div>
+
+      <div id="about"></div>
+
+      <!-- Footer -->
+      <footer>
+        <p>&copy; 2024 ArtBeat. All Rights Reserved.</p>
+      </footer>
+    </div>
+
+    <script src="scripts/app.js"></script>
+
+    <script>
+      // Function to dynamically load page content
+      function changePage(page) {
+        fetch(page)
+          .then((response) => response.text())
+          .then((html) => {
+            document.getElementById("main-content").innerHTML = html;
+          });
+      }
+
+      // Load default page (home.html) on initial load
+      changePage("home.html");
+    </script>
+  </body>
+</html>
